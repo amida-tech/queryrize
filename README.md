@@ -1,0 +1,2 @@
+# queryrize
+Simple SQL Parser
