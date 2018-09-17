@@ -1,0 +1,42 @@
+{
+  "name": "queryrize",
+  "version": "0.1.0",
+  "description": "Simple SQL Parser",
+  "main": "lib/queryrize.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha test/*.js --bail --exit",
+    "beautify": "esw -c .eslintrc ./**/*.js --color --fix",
+    "coverage": "NODE_ENV=test istanbul cover --report cobertura ./node_modules/mocha/bin/_mocha -- -R spec --recursive -t 10000",
+    "coveragehtml": "NODE_ENV=test istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec --recursive -t 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amida-tech/queryrize.git"
+  },
+  "author": "Afsin Ustundag",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/amida-tech/queryrize",
+  "dependencies": {
+    "byline": "^5.0.0",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-watch": "^4.0.2",
+    "mocha": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=6.9.1"
+  },
+  "keywords": [
+    "SQL",
+    "Parser",
+    "Postgres"
+  ],
+  "bugs": {
+    "url": "https://github.com/amida-tech/queryrize/issues"
+  }
+}
